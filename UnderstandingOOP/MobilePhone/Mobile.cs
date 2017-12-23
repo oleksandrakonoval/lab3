@@ -17,16 +17,6 @@ namespace SimCorp.IMS.UnderstandingOOP.MobilePhone
             Screen.Show(screenImage);
         }
 
-        public void CreateMobile() {
-            Console.WriteLine(Screen.ToString());
-           
-            Keyboard.ToString();
-            Battery.ToString();
-            SimCard.ToString();
-            OperatingSystem.ToString();
-            Camera.ToString();
-        }
-
         public ScreenBase defineScreen() {
             ScreenBase result = new ColorfulScreen();
             Console.WriteLine("Choose screen type index:");
