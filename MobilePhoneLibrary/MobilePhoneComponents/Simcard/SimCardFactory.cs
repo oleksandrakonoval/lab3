@@ -20,7 +20,7 @@ namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Simcard
         public static ISimCard GetSimCard(SimCardTypeik simCardType, IOutput output)
         {
             string typeName = simCardType.ToString();
-            typeName = "MobilePhone." + typeName;
+            typeName = "SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Simcard." + typeName;
             Type hType = Type.GetType(typeName);
             object SimCardItem = Activator.CreateInstance(hType, output);
             ISimCard simcard = SimCardItem as ISimCard;

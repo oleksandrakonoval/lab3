@@ -41,9 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="FakeTest.cs" />
+    <Compile Include="ChargerTests\MotoChargerClassTest.cs" />
+    <Compile Include="ChargerTests\SamsungChargerClassTest.cs" />
+    <Compile Include="ChargerTests\SonyChargerClassTest.cs" />
+    <Compile Include="FakeHeadsetClassTest.cs" />
+    <Compile Include="ChargerTests\NokiaChargerClassTest.cs" />
+    <Compile Include="HeadsetTests\iPhoneHeadsetClassTest.cs" />
+    <Compile Include="HeadsetTests\PhoneSpeakerClassTest.cs" />
+    <Compile Include="HeadsetTests\SamsungHeadsetClassTest.cs" />
+    <Compile Include="HeadsetTests\UnoffocoaliPhoneHeadsetClassTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimcardTests\MicroSimClassTest.cs" />
+    <Compile Include="SimcardTests\MiniSimClassTest.cs" />
+    <Compile Include="SimcardTests\NanoSimClassTest.cs" />
+    <Compile Include="SimcardTests\SimClassTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Fake\Fake.csproj">
@@ -55,6 +66,10 @@
       <Name>MobilePhoneLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

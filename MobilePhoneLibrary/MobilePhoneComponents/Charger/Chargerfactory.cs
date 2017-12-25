@@ -16,7 +16,7 @@ namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger
         public static ICharger GetCharger(ChargerTypik chargerType, IOutput output)
         {
             string typeName = chargerType.ToString();
-            typeName = "MobilePhone." + typeName;
+            typeName = "SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger." + typeName;
             Type hType = Type.GetType(typeName);
             object ChargerComponent = Activator.CreateInstance(hType, output);
             ICharger charger = ChargerComponent as ICharger;

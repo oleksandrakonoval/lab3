@@ -1,4 +1,4 @@
-﻿namespace MobilePhomeWFA
+﻿namespace SimCorp.IMS.MobilePhomeWFA
 {
     partial class Form1
     {

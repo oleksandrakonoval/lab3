@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace MobilePhomeWFA
+namespace SimCorp.IMS.MobilePhomeWFA
 {
     public class WFAOutput : IOutput
     {

@@ -6,7 +6,7 @@ using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Simcard;
 using SimCorp.IMS.MobilePhoneLibrary.General;
 
-namespace MobilePhomeWFA
+namespace SimCorp.IMS.MobilePhomeWFA
 {
     public partial class Form1 : Form
     {
@@ -26,14 +26,20 @@ namespace MobilePhomeWFA
             textBox1.Clear();
             output = new WFAOutput(textBox1);
 
-            MyMobile.PlaybackComponent = HeadsetFactory.GetPlayback((headsetTypik)checkedListBox1.SelectedIndex, output);
-            MyMobile.PlaybackComponent.Play(textBox1);
+            if (checkedListBox1.SelectedIndices.Count==1) {
+                MyMobile.PlaybackComponent = HeadsetFactory.GetPlayback((headsetTypik)checkedListBox1.SelectedIndex, output);
+                MyMobile.PlaybackComponent.Play(textBox1);
+            }
 
-            MyMobile.SimCardItem = SimCardFactory.GetSimCard((SimCardTypeik)checkedListBox2.SelectedIndex, output);
-            MyMobile.SimCardItem.Call(textBox1);
+            if (checkedListBox2.SelectedIndices.Count == 1) {
+                MyMobile.SimCardItem = SimCardFactory.GetSimCard((SimCardTypeik)checkedListBox2.SelectedIndex, output);
+                MyMobile.SimCardItem.Call(textBox1);
+            }
 
-            MyMobile.ChargerComponenet = ChargerFactory.GetCharger((ChargerTypik)checkedListBox3.SelectedIndex, output);
-            MyMobile.ChargerComponenet.Charge(textBox1);
+            if (checkedListBox3.SelectedIndices.Count == 1) {
+                MyMobile.ChargerComponenet = ChargerFactory.GetCharger((ChargerTypik)checkedListBox3.SelectedIndex, output);
+                MyMobile.ChargerComponenet.Charge(textBox1);
+            }
         }
 
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)

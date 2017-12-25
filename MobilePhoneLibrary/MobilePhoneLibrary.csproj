@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B2B23137-5DDE-47E3-B623-8C526664415D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimCorp.IMS.UnderstandingOOP</RootNamespace>
     <AssemblyName>UnderstandingOOP</AssemblyName>
@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,14 +61,23 @@
   <ItemGroup>
     <Compile Include="General\ConsoleOutput.cs" />
     <Compile Include="General\IOutput.cs" />
+    <Compile Include="General\WFAOutput.cs" />
     <Compile Include="Images\Image.cs" />
     <Compile Include="Images\IScreenImage.cs" />
     <Compile Include="MobilePhoneComponents\Battery.cs" />
     <Compile Include="MobilePhoneComponents\Camera.cs" />
     <Compile Include="MobilePhoneComponents\Charger\Chargerfactory.cs" />
     <Compile Include="MobilePhoneComponents\Charger\ICharger.cs" />
+    <Compile Include="MobilePhoneComponents\Charger\MotoCharger.cs" />
+    <Compile Include="MobilePhoneComponents\Charger\NokiaCharger.cs" />
+    <Compile Include="MobilePhoneComponents\Charger\SamsungCharger.cs" />
+    <Compile Include="MobilePhoneComponents\Charger\SonyCharger.cs" />
     <Compile Include="MobilePhoneComponents\Headset\HeadsetFactory.cs" />
+    <Compile Include="MobilePhoneComponents\Headset\iPhoneHeadset.cs" />
     <Compile Include="MobilePhoneComponents\Headset\IPlayback.cs" />
+    <Compile Include="MobilePhoneComponents\Headset\PhoneSpeaker.cs" />
+    <Compile Include="MobilePhoneComponents\Headset\SamsungHeadset.cs" />
+    <Compile Include="MobilePhoneComponents\Headset\UnoffocoaliPhoneHeadset.cs" />
     <Compile Include="MobilePhoneComponents\Keyboard.cs" />
     <Compile Include="MobilePhoneComponents\OperatingSystem.cs" />
     <Compile Include="MobilePhoneComponents\ColorfulScreen.cs" />
@@ -77,6 +87,10 @@
     <Compile Include="MobilePhoneComponents\ScreenBase.cs" />
     <Compile Include="MobilePhoneComponents\SimCard.cs" />
     <Compile Include="MobilePhoneComponents\Simcard\ISimCard.cs" />
+    <Compile Include="MobilePhoneComponents\Simcard\MicroSim.cs" />
+    <Compile Include="MobilePhoneComponents\Simcard\MiniSim.cs" />
+    <Compile Include="MobilePhoneComponents\Simcard\NanoSim.cs" />
+    <Compile Include="MobilePhoneComponents\Simcard\Sim.cs" />
     <Compile Include="MobilePhoneComponents\Simcard\SimCardFactory.cs" />
     <Compile Include="MobilePhone\Mobile.cs" />
     <Compile Include="MobilePhone\SimCorpMobile.cs" />

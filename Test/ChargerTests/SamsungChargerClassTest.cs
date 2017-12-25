@@ -1,25 +1,25 @@
 ﻿using SimCorp.IMS.Fake;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhoneLibrary.General;
+using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger;
 
-namespace FakeTest
+namespace SimCorp.IMS.Test.ChargerTests
 {
     [TestClass]
-    public class FakeTest
+    public class TestOutputForSamsungCharger
     {
         [TestMethod]
-        public void ConsoleFakePlay()
+        public void SamsungCharger_IsInProgress()
         {
             // Arrange / Act
             IOutput output = new OutputMock();
-            FakeHeadset headset = new FakeHeadset(output);
-            headset.Play(output);
+            ICharger charger = new SamsungCharger(output);
+            charger.Charge(output);
 
-            var expectedString = "iPhoneHeadset sound\r\n";
-            
+            var expectedString = "SamsungCharger in progress\r\n";
+
             //Assert
             Assert.AreEqual(expectedString, output.Output.ToString());
         }
-        
     }
 }
