@@ -1,6 +1,6 @@
 ﻿namespace SimCorp.IMS.MobilePhomeWFA
 {
-    partial class Form1
+    partial class InterfacesForm
     {
         /// <summary>
         /// Required designer variable.

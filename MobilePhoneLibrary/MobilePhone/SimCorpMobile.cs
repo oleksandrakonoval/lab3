@@ -1,8 +1,14 @@
-﻿using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents;
+﻿using SimCorp.IMS.MobilePhoneLibrary.General;
+using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents;
+using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger;
+using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Headset;
+using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Simcard;
 using System;
 
 namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone {
     public class SimCorpMobile : Mobile {
+
+        IOutput output = new ConsoleOutput();
 
         public override ScreenBase Screen { get; set; }
         public override Keyboard Keyboard { get; set; }
@@ -49,6 +55,21 @@ namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone {
             Console.WriteLine(SimCard.ToString());
             Console.WriteLine(OperatingSystem.ToString());
             Console.WriteLine(Camera.ToString());
+        }
+
+        public void ConfigureMobile() {
+            int headsetType = defineEnumParam(typeof(headsetTypik));
+            PlaybackComponent = HeadsetFactory.GetPlayback((headsetTypik)headsetType, output);
+            PlaybackComponent.Play(new object());
+
+            int chargerType = defineEnumParam(typeof(ChargerTypik));
+            ChargerComponenet = ChargerFactory.GetCharger((ChargerTypik)chargerType, output);
+            ChargerComponenet.Charge(new object());
+
+            int simcardType = defineEnumParam(typeof(SimCardTypeik));
+            SimCardItem = SimCardFactory.GetSimCard((SimCardTypeik)simcardType, output);
+            SimCardItem.Call(new object());
+
         }
     }
 }

@@ -2,9 +2,10 @@
 using System;
 using System.Windows.Forms;
 
-namespace SimCorp.IMS.MobilePhomeWFA {
+namespace SimCorp.IMS.MobilePhoneLibrary.General {
     public class WFAOutput : IOutput {
         private TextBox myTextBox=new TextBox();
+        private RichTextBox richTextBox;
 
         public string Output {
             get {
@@ -23,6 +24,10 @@ namespace SimCorp.IMS.MobilePhomeWFA {
 
         public WFAOutput(TextBox textBox) {
             this.myTextBox = textBox;
+        }
+
+        public WFAOutput(RichTextBox richTextBox) {
+            this.richTextBox = richTextBox;
         }
     }
 }

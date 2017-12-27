@@ -6,6 +6,9 @@ namespace SimCorp.IMS.MobilePhoneConsole {
 
         static void Main(string[] args) {
             SimCorpMobile MyMobile = new SimCorpMobile();
+            Console.WriteLine();
+            Console.WriteLine("_____________________________________________");
+            MyMobile.ConfigureMobile();
             Console.ReadKey();
         }
     }

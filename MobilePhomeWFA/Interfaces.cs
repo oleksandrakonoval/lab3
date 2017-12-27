@@ -8,13 +8,13 @@ using SimCorp.IMS.MobilePhoneLibrary.General;
 
 namespace SimCorp.IMS.MobilePhomeWFA
 {
-    public partial class Form1 : Form
+    public partial class InterfacesForm : Form
     {
         SimCorpMobile MyMobile;
       
         private IOutput output;
 
-        public Form1()
+        public InterfacesForm()
         {
             InitializeComponent();
             MyMobile = new SimCorpMobile();            

@@ -95,6 +95,7 @@
     <Compile Include="MobilePhone\Mobile.cs" />
     <Compile Include="MobilePhone\SimCorpMobile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\SMSProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
