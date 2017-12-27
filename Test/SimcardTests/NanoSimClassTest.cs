@@ -3,14 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhoneLibrary.General;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Simcard;
 
-namespace SimCorp.IMS.Test.SimcardTests
-{
+namespace SimCorp.IMS.Test.SimcardTests {
     [TestClass]
-    public class TestOutputForNanoSim
-    {
+    public class TestOutputForNanoSim {
         [TestMethod]
-        public void NanoSim_IsCall()
-        {
+        public void NanoSim_IsCall() {
             // Arrange / Act
             IOutput output = new OutputMock();
             ISimCard simcard = new NanoSim(output);

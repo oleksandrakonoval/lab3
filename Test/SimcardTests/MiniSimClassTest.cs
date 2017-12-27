@@ -3,14 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhoneLibrary.General;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Simcard;
 
-namespace SimCorp.IMS.Test.SimcardTests
-{
+namespace SimCorp.IMS.Test.SimcardTests {
     [TestClass]
-    public class TestOutputForMiniSim
-    {
+    public class TestOutputForMiniSim {
         [TestMethod]
-        public void MiniSim_IsCall()
-        {
+        public void MiniSim_IsCall() {
             // Arrange / Act
             IOutput output = new OutputMock();
             ISimCard simcard = new MiniSim(output);

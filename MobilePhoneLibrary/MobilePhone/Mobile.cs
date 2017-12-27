@@ -6,8 +6,7 @@ using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Headset;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Simcard;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger;
 
-namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone
-{
+namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone {
     public abstract class Mobile {
         public abstract ScreenBase Screen { get; set; }
         public abstract Keyboard Keyboard { get; set; }
@@ -50,23 +49,6 @@ namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone
             }
             return result;
         }
-
-       /* public int defineEnumParam(string type) {
-            
-            Console.WriteLine($"Choose {type} index:");
-            type = "SimCorp.IMS.UnderstandingOOP.MobilePhoneComponents." + type;
-            Type currentType = Type.GetType(type);
-            object thisObjectItem = Activator.CreateInstance(currentType);
-            IEnumerable enumItem = thisObjectItem as IEnumerable;
-            
-            foreach (string item in Enum.GetNames(thisObjectItem.GetType()))
-            {
-                Console.WriteLine($"{Enum.Parse(thisObjectItem.GetType(), item).GetHashCode()} - {item.ToString()}");
-            }
-            int result = Convert.ToInt32(Console.ReadLine());
-            return result;
-
-        }*/
 
         public int defineEnumParam(Type type) {
             string[] enumInsts = Enum.GetNames(type);

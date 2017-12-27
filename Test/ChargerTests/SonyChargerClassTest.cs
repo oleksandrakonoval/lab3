@@ -3,14 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhoneLibrary.General;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger;
 
-namespace SimCorp.IMS.Test.ChargerTests
-{
+namespace SimCorp.IMS.Test.ChargerTests {
     [TestClass]
-    public class TestOutputForSonyCharger
-    {
+    public class TestOutputForSonyCharger {
         [TestMethod]
-        public void SonyCharger_IsInProgress()
-        {
+        public void SonyCharger_IsInProgress() {
             // Arrange / Act
             IOutput output = new OutputMock();
             ICharger charger = new SonyCharger(output);

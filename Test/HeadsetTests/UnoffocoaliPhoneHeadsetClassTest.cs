@@ -3,14 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhoneLibrary.General;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Headset;
 
-namespace SimCorp.IMS.Test.HeadsetTests
-{
+namespace SimCorp.IMS.Test.HeadsetTests {
     [TestClass]
-    public class TestOutputForUnoffocoaliPhoneHeadset
-    {
+    public class TestOutputForUnoffocoaliPhoneHeadset {
         [TestMethod]
-        public void UnoffocoaliPhoneHeadset_IsPlay()
-        {
+        public void UnoffocoaliPhoneHeadset_IsPlay() {
             // Arrange / Act
             IOutput output = new OutputMock();
             IPlayback playback = new UnoffocoaliPhoneHeadset(output);

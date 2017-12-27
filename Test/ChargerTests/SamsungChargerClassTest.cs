@@ -3,14 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhoneLibrary.General;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger;
 
-namespace SimCorp.IMS.Test.ChargerTests
-{
+namespace SimCorp.IMS.Test.ChargerTests {
     [TestClass]
-    public class TestOutputForSamsungCharger
-    {
+    public class TestOutputForSamsungCharger {
         [TestMethod]
-        public void SamsungCharger_IsInProgress()
-        {
+        public void SamsungCharger_IsInProgress() {
             // Arrange / Act
             IOutput output = new OutputMock();
             ICharger charger = new SamsungCharger(output);

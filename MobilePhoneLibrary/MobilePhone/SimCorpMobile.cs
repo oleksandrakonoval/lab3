@@ -1,9 +1,7 @@
 ﻿using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents;
 using System;
 
-
-namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone
-{
+namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone {
     public class SimCorpMobile : Mobile {
 
         public override ScreenBase Screen { get; set; }
@@ -42,7 +40,6 @@ namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone
             Console.WriteLine("Choose flash (false/true)");
             bool cflash = Convert.ToBoolean(Console.ReadLine());
             Camera = new Camera(cquality, cautofocus, cflash);
-
 
             Console.WriteLine("_______________________");
             Console.WriteLine("Defined parameters:");

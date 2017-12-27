@@ -5,11 +5,9 @@ using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger;
 
 namespace SimCorp.IMS.Test.ChargerTests {
     [TestClass]
-    public class TestOutputForMotoCharger
-    {
+    public class TestOutputForMotoCharger {
         [TestMethod]
-        public void MotoCharger_IsInProgress()
-        {
+        public void MotoCharger_IsInProgress() {
             // Arrange / Act
             IOutput output = new OutputMock();
             ICharger charger = new MotoCharger(output);
