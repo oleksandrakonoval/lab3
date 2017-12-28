@@ -17,7 +17,9 @@ namespace SimCorp.IMS.MobilePhomeWFA
         public InterfacesForm()
         {
             InitializeComponent();
-            MyMobile = new SimCorpMobile();            
+            MyMobile = new SimCorpMobile();
+
+            Invoke(new Action(() => { }));
         }
         
 

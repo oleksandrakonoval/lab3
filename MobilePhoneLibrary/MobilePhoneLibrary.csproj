@@ -62,6 +62,7 @@
     <Compile Include="General\ConsoleOutput.cs" />
     <Compile Include="General\IOutput.cs" />
     <Compile Include="General\WFAOutput.cs" />
+    <Compile Include="General\WFAOutputRichTextBox.cs" />
     <Compile Include="Images\Image.cs" />
     <Compile Include="Images\IScreenImage.cs" />
     <Compile Include="MobilePhoneComponents\Battery.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="MobilePhoneComponents\Simcard\NanoSim.cs" />
     <Compile Include="MobilePhoneComponents\Simcard\Sim.cs" />
     <Compile Include="MobilePhoneComponents\Simcard\SimCardFactory.cs" />
+    <Compile Include="MobilePhone\EmptyMobile.cs" />
     <Compile Include="MobilePhone\Mobile.cs" />
     <Compile Include="MobilePhone\SimCorpMobile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

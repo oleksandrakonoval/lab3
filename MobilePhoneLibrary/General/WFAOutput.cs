@@ -1,11 +1,9 @@
-﻿using SimCorp.IMS.MobilePhoneLibrary.General;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace SimCorp.IMS.MobilePhoneLibrary.General {
     public class WFAOutput : IOutput {
         private TextBox myTextBox=new TextBox();
-        private RichTextBox richTextBox;
 
         public string Output {
             get {
@@ -24,10 +22,6 @@ namespace SimCorp.IMS.MobilePhoneLibrary.General {
 
         public WFAOutput(TextBox textBox) {
             this.myTextBox = textBox;
-        }
-
-        public WFAOutput(RichTextBox richTextBox) {
-            this.richTextBox = richTextBox;
         }
     }
 }

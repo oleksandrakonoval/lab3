@@ -1,4 +1,4 @@
-﻿namespace SimCorp.IMS.UnderstandingOOP.Provider {
+﻿namespace SimCorp.IMS.SMSReceiverWFA {
     public class SMSProvider {
 
         public delegate void SMSRecievedDelegate(string message);
@@ -8,5 +8,12 @@
         public void RaiseSMSReceivedEvent(string message) {
             SMSReceived?.Invoke(message);
         }
+
+        public void ReceiveSMS(string message) {
+
+            RaiseSMSReceivedEvent(message);
+        }
+
+        
     }
 }

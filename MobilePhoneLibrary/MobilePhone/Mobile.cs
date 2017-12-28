@@ -5,7 +5,7 @@ using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponent;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Headset;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Simcard;
 using SimCorp.IMS.MobilePhoneLibrary.MobilePhoneComponents.Charger;
-using SimCorp.IMS.UnderstandingOOP.Provider;
+using SimCorp.IMS.SMSReceiverWFA;
 
 namespace SimCorp.IMS.MobilePhoneLibrary.MobilePhone {
     public abstract class Mobile {
